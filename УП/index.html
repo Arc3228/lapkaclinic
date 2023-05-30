@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="./assets/img/favicon.png" />
+    <script src="./assets/js/main.js"></script>
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navigation">
+          <div class="logo"><a href="#">LapkaClinic</a></div>
+          <nav>
+            <ul>
+              <li><a href="#section-1">О нас</a></li>
+              <li><a href="#section-2">Наш блог</a></li>
+              <li><a href="#section-3">Контакты</a></li>
+              <li><a href="#section-4">Отзывы</a></li>
+            </ul>
+          </nav>
+          <div class="burger-menu">
+            <a href="" class="burger-menu_button">
+              <spun class="burger-menu_lines"></spun>
+            </a>
+            <nav class="burger-menu_nav">
+              <a href="#popup" class="burger-menu_link" onclick="openPopup()">Войти</a>
+              <a href="#section-1" class="burger-menu_link">О нас</a>
+              <a href="#section-2" class="burger-menu_link">Наш блог</a>
+              <a href="#section-3" class="burger-menu_link">Контакты</a>
+              <a href="#section-4" class="burger-menu_link">Отзывы</a>
+            </nav>
+            <div class="burger-menu_overlay"></div>
+          </div>
+          <a href="#section-0" class="login-btn" onclick="openPopup()">ВОЙТИ</a>
+        </div>
+        <div class="wrapper">
+          <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+          <div class="form-box login">
+            <h2>Войти</h2>
+            <form action="#">
+              <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required />
+                <label>Email</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="Password" required />
+                <label>Пароль</label>
+              </div>
+              <div class="remember-forgot">
+                <label><input type="checkbox" /> Запомнить меня</label>
+                <a href="#">Забыли пароль?</a>
+              </div>
+              <button type="submit" class="button">Войти</button>
+              <div class="login-register">
+                <p>
+                  Нет аккаунта?<a href="#" class="register-link"
+                    >Зарегестрироваться</a
+                  >
+                </p>
+              </div>
+            </form>
+          </div>
+          <div class="form-box register">
+            <h2>Регистрация</h2>
+            <form action="#">
+              <div class="input-box">
+                <span class="icon"><ion-icon name="people"></ion-icon></span>
+                <input type="text" required />
+                <label>Ваше имя</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required />
+                <label>Email</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="Password" required />
+                <label>пароль</label>
+              </div>
+              <div class="remember-forgot">
+                <label
+                  ><input type="checkbox" /> I agree to the terms &
+                  conditions</label
+                >
+              </div>
+              <button type="submit" class="button">Зарегестрироваться</button>
+              <div class="login-register">
+                <p>
+                  Уже есть аккаунт?<a href="#" class="login-link">Войти</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="section-0">
+        <div class="container">
+          <h1>Ваш питомец заболел?</h1>
+          <p>
+            Не беспокойтесь! Наши врачи одни из самых квалифицированных. Отдавая
+            вашего друга к нам, будьте уверены, он в надёжных руках
+          </p>
+          <a href="#section-3" class="btn">Записаться на приём</a>
+        </div>
+        <img src="./assets/img/arrow.svg" alt="" class="arrow" />
+      </section>
+      <section class="cardes" id="section-1">
+        <div class="container">
+          <h2>Наши услуги</h2>
+          <div class="cards-container">
+            <div class="cards">
+              <div class="card">
+                <p>Прививка от бешенства</p>
+                <img src="./assets/img/card1.png" alt="" />
+                <a href="#" class="card-btn">Подробнее</a>
+              </div>
+              <div class="card">
+                <p>Кастрация</p>
+                <img src="./assets/img/card2.png" alt="" />
+                <a href="#" class="card-btn">Подробнее</a>
+              </div>
+              <div class="card">
+                <p>Прививки от паразитов</p>
+                <img src="./assets/img/card3.png" alt="" />
+                <a href="#" class="card-btn">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog" id="section-2">
+        <div class="container">
+        <h2>Наш блог</h2>
+        <div class="grid-wrapper">
+          <div class="wide">
+            <img src="./assets/img/1.jpg" alt="" />
+          </div>
+          <div class="tall">
+            <img src="./assets/img/2.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./assets/img/close-up-on-veterinarian-taking-care-of-dog.jpg" alt="" />
+          </div>
+          <div class="wide">
+            <img src="./assets/img/veterinarian-check-ing-puppy-s-health.jpg" alt="" />
+          </div>
+          <div class="tall">
+            <img src="./assets/img/smiling-female-veterinarian-examining-dog-s-paw-lying-table-clinic.jpg" alt="" />
+          </div>
+          <div class="wide">
+            <img src="./assets/img/close-up-veterinarian-taking-care-dog.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./assets/img/veterinarian-taking-care-pet.jpg" alt="" />
+          </div>
+          <div class="wide">
+            <img src="./assets/img/shepherd-cute-dog-lying-white-table-before-vaccination-vet-clinic.jpg" alt="" />
+          </div>
+          <div class="tall">
+            <img src="./assets/img/veterinarian-taking-care-pet.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./assets/img/veterinarian-check-ing-puppy-s-health.jpg" alt="" />
+          </div>
+          <div class="wide">
+            <img src="./assets/img/woman-veterinarian-is-checking-health-white-rabbit.jpg" alt="" />
+          </div>
+          <div class="big">
+            <img src="./assets/img/close-up-veterinary-doctor-taking-care-pet.jpg" alt="" />
+          </div>
+          <div class="big">
+            <img src="./assets/img/cat-being-examined-vet.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./assets/img/shepherd-cute-dog-lying-white-table-before-vaccination-vet-clinic.jpg" alt="" />
+          </div>
+          <div class="tall">
+            <img src="./assets/img/smiling-female-veterinarian-writing-clipboard-with-dog-table-clinic.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./assets/img/cat-being-examined-vet.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./assets/img/shepherd-cute-dog-lying-white-table-before-vaccination-vet-clinic.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./assets/img/close-up-veterinary-doctor-taking-care-pet.jpg" alt="" />
+          </div>
+          <div class="wide">
+            <img src="./assets/img/woman-veterinarian-is-checking-health-white-rabbit.jpg" alt="" />
+          </div>
+          <div>
+            <img src="./assets/img/veterinarian-taking-care-pet-dog.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      </section>      
+      <section class="contacts" id="section-3">
+        <div class="container-contact">
+          <div class="title-contact">
+            <h2>Контакты</h2>
+            <p class="subtitle">Записаться на приём</p>
+          </div>
+          <form>
+            <div class="input-box-contact">
+              <label>Ваше имя</label>
+              <input type="text">
+            </div>
+            <div class="input-box-contact">
+              <label>Ваша фамилия</label>
+              <input type="text">
+            </div>
+            <div class="input-box-contact">
+              <label>Ваш email</label>
+              <input type="email">
+            </div>
+            <div class="form-btn">
+              <button class="contacts-btn">Отправить заявку</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="slide" id="section-4">
+        <div class="container">
+        <h2>Отзывы</h2>
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="slide-card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img src="./assets/img/img13.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <p class="name">Chris Evans</p>
+                  <p class="description">
+                    The lorem text the section that contains header with having open
+                    functionality. Lorem dolor sit amet consectetur adipisicing
+                    elit.
+                  </p>
+    
+                  <p class="sub-text">2 days ago</p>
+                </div>
+              </div>
+              <div class="slide-card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+    
+                  <div class="card-image">
+                    <img src="./assets/img/img12.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+    
+                <div class="card-content">
+                  <p class="name">Steve Carell</p>
+                  <p class="description">
+                    The lorem text the section that contains header with having open
+                    functionality. Lorem dolor sit amet consectetur adipisicing
+                    elit.
+                  </p>
+    
+                  <p class="sub-text">2 days ago</p>
+                </div>
+              </div>
+              <div class="slide-card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+    
+                  <div class="card-image">
+                    <img src="assets/img/img11.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+    
+                <div class="card-content">
+                  <p class="name">Margo Robby</p>
+                  <p class="description">
+                    The lorem text the section that contains header with having open
+                    functionality. Lorem dolor sit amet consectetur adipisicing
+                    elit.
+                  </p>
+    
+                  <p class="sub-text">2 days ago</p>
+                </div>
+              </div>
+              <div class="slide-card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+    
+                  <div class="card-image">
+                    <img src="./assets/img/img10.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+    
+                <div class="card-content">
+                  <p class="name">Jack</p>
+                  <p class="description">
+                    The lorem text the section that contains header with having open
+                    functionality. Lorem dolor sit amet consectetur adipisicing
+                    elit.
+                  </p>
+    
+                  <p class="sub-text">2 days ago</p>
+                </div>
+              </div>
+              <div class="slide-card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+    
+                  <div class="card-image">
+                    <img src="./assets/img/img5.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+    
+                <div class="card-content">
+                  <p class="name">Ryan Reynolds</p>
+                  <p class="description">
+                    The lorem text the section that contains header with having open
+                    functionality. Lorem dolor sit amet consectetur adipisicing
+                    elit.
+                  </p>
+    
+                  <p class="sub-text">2 days ago</p>
+                </div>
+              </div>
+              <div class="slide-card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+    
+                  <div class="card-image">
+                    <img src="./assets/img/img6.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+    
+                <div class="card-content">
+                  <p class="name">Ryan Gosling</p>
+                  <p class="description">
+                    The lorem text the section that contains header with having open
+                    functionality. Lorem dolor sit amet consectetur adipisicing
+                    elit.
+                  </p>
+    
+                  <p class="sub-text">2 days ago</p>
+                </div>
+              </div>
+              <div class="slide-card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+    
+                  <div class="card-image">
+                    <img src="./assets/img/img7.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+    
+                <div class="card-content">
+                  <p class="name">Emma Stone</p>
+                  <p class="description">
+                    The lorem text the section that contains header with having open
+                    functionality. Lorem dolor sit amet consectetur adipisicing
+                    elit.
+                  </p>
+    
+                  <p class="sub-text">2 days ago</p>
+                </div>
+              </div>
+              <div class="slide-card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+    
+                  <div class="card-image">
+                    <img src="./assets/img/img8.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+    
+                <div class="card-content">
+                  <p class="name">Christian Bale</p>
+                  <p class="description">
+                    The lorem text the section that contains header with having open
+                    functionality. Lorem dolor sit amet consectetur adipisicing
+                    elit.
+                  </p>
+    
+                  <p class="sub-text">2 days ago</p>
+                </div>
+              </div>
+              <div class="slide-card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+    
+                  <div class="card-image">
+                    <img src="./assets/img/img9.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+    
+                <div class="card-content">
+                  <p class="name">Brad Pitt</p>
+                  <p class="description">
+                    The lorem text the section that contains header with having open
+                    functionality. Lorem dolor sit amet consectetur adipisicing
+                    elit.
+                  </p>
+    
+                  <p class="sub-text">2 days ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="col1">
+            <div class="logo">
+              <a href="#">LapkaClinic</a>
+            </div>
+          </div>
+          <div class="col2">
+            <ul class="menu">
+              <li><a href="#section-1">О нас</a></li>
+              <li><a href="#section-2">Наш блог</a></li>
+              <li><a href="#section-3">Контакты</a></li>
+              <li><a href="#section-4">Отзывы</a></li>
+            </ul>
+          </div>
+          <div class="col3">
+            <ul class="media-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-tumblr"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+    <script>
+      let popup = document.getElementById("popup");
+
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }
+
+      function closePopup() {
+        popup.classList.remove("open-popup");
+      }
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="./assets/js/popup.js"></script>
+  </body>
+</html>
